@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Web Page</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="mystyle.css">
+    <script src="myScript.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Hi, my name is Lejla. I'm a 2nd year Computer Science student at IUS.</h1>
-    </header>
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">About me</a>
+      <a href="#">Education</a>
+      <a href="#">Projects</a>
+      <a href="#">Informal Education</a>
+    </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()"><img src="./images/menu2.png" width:"60" height="60" /></span>
+    
+     <div id="main">
+         <h3>Hi, my name is Lejla. I'm a 2nd year Computer Science student at IUS.</h3>
+    </div>
 
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is a simple web page created for demonstration purposes.</p>
-        </section>
+   
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>You can reach us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 My Simple Web Page</p>
-    </footer>
+   
 </body>
 </html>
