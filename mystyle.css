@@ -3,12 +3,40 @@ h1{
 }
 #main{
   padding: 20px;
-  width: 100%;
-  height: 400px;
+  padding-top: 100px;
+  width: 90%;
+  height: 800px;
   text-align: right;
- margin-right: 10px;
+  margin-right: 10px;
+ 
 }
-
+#description{
+  color: dimgray;
+}
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover{
+  background-color:white;
+  color: black;
+}
+#java{
+  padding: 4%;
+}
+#pills{
+  margin-left: auto; 
+  margin-right: 0;
+  padding-left: 40%;
+}
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
