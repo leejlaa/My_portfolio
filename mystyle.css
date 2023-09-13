@@ -1,6 +1,18 @@
 h1{
     text-align: center;
 }
+h3{
+  color: whitesmoke;
+}
+#body-full {
+  width: auto; height: 768px; margin-bottom: 0px;
+  
+}
+#icon{
+  font-size: 36px;
+  padding:10px;
+}
+
 #main{
   padding: 20px;
   padding-top: 100px;
@@ -8,10 +20,10 @@ h1{
   height: 800px;
   text-align: right;
   margin-right: 10px;
- 
+  color: #f1f1f1;
 }
 #description{
-  color: dimgray;
+  color: lightgray;
 }
 .button {
   background-color: #ddd;
@@ -24,10 +36,15 @@ h1{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+  height: 40px;
+  width: auto;
+  transition: height 4s width 4s;
 }
 .button:hover{
-  background-color:white;
-  color: black;
+  background-color:#0d0694;
+  color: white;
+  height: 50px;
+  width: auto + 5px;
 }
 #java{
   padding: 4%;
@@ -93,3 +110,5 @@ h1{
       right: 35px;
     }
   }
+  
+ 

@@ -10,30 +10,19 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
 </head>
 <body>
-    <!-- The overlay -->
-<div id="myNav" class="overlay">
+    
 
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="#">About me</a>
-      <a href="#">Education</a>
-      <a href="#">Projects</a>
-      <a href="#">Informal Education</a>
-    </div>
-  
-  </div>
-  
+
+  <div id="body-full">
   <!-- Use any element to open/show the overlay navigation menu -->
-  <span onclick="openNav()"><img src="./images/menu2.png" width:"60" height="60" /></span>
+  <span onclick="openNav()"><i id="icon" class="fas fa-bars" style="color:white" ></i></span>
     
      <div id="main">
-        <img 
+        
          <h3>Hi, my name is Lejla. I'm a 2nd year Computer Science student at IUS.</h3>
          <h4 id="description">I have a passion for coding by using the following techologies:</h4>
         <div id="pills">
@@ -54,6 +43,34 @@
 
    
 
-   
+</div>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">About me</a>
+          <a href="#">Education</a>
+          <a href="#">Projects</a>
+          <a href="#">Informal Education</a>
+        </div>
+      
+      </div>
+<script>
+    VANTA.HALO({
+      el: "#body-full",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 730.00,
+      minWidth: 300.00,
+      backgroundColor: 0xc1448
+    })
+    </script>
+    
+
 </body>
 </html>
